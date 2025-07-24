@@ -23,4 +23,6 @@
     dateContainer.classList.remove('visuallyhidden');
     //dateContainer.classList.remove('hidden');
     dateContainer.setAttribute('aria-hidden', 'false');
+    dateContainer.offsetHeight;
+    dateContainer.focus();
   });
