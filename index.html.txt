@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Radio with Date Input</title>
+
+  <style>
+.hidden {
+  display: none;
+}
+
+.radio-wrapper {
+  margin-bottom: 10px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    &.focusable {
+        &:active, &:focus {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+    }
+}
+</style>
+
+  <script src="index.js"></script>
+
+
+
+</head>
+<body>
+  <fieldset role="radiogroup" aria-labelledby="options-label">
+    <legend id="options-label">Choose an option</legend>
+
+    <div class="radio-wrapper">
+      <label for="option1">
+        <input type="radio" name="option" id="option1" aria-checked="true" role="radio" aria-controls="dateContainer" checked/>
+        Option 1
+      </label>
+    </div>
+
+    <div class="radio-wrapper">
+      <label for="option2">
+        <input type="radio" name="option" id="option2" aria-checked="false" role="radio" aria-controls="dateContainer" />
+        Option 2
+      </label>
+    </div>
+  </fieldset>
+
+  <div id="dateContainer" class="visuallyhidden" aria-hidden="true">
+    <label for="dateInput">Select a date:</label>
+    <input type="date" id="dateInput" />
+  </div>
+</body>
+</html>
