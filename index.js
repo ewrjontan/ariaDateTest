@@ -23,6 +23,7 @@
     dateContainer.classList.remove('visuallyhidden');
     //dateContainer.classList.remove('hidden');
     dateContainer.setAttribute('aria-hidden', 'false');
-    dateContainer.offsetHeight;
-    dateContainer.focus();
+    let dateInput = document.getElementById("dateInput");
+    dateInput.offsetHeight;
+    dateInput.focus();
   });
