@@ -9,8 +9,8 @@
     option2.checked = false;
     option1.setAttribute('aria-checked', 'true');
     option2.setAttribute('aria-checked', 'false');
-    //dateContainer.classList.add('visuallyhidden');
-    dateContainer.classList.add('hidden');
+    dateContainer.classList.add('visuallyhidden');
+    //dateContainer.classList.add('hidden');
     dateContainer.setAttribute('aria-hidden', 'true');
   });
 
@@ -20,7 +20,7 @@
     option1.checked = false;
     option2.setAttribute('aria-checked', 'true');
     option1.setAttribute('aria-checked', 'false');
-    //dateContainer.classList.remove('visuallyhidden');
-    dateContainer.classList.remove('hidden');
+    dateContainer.classList.remove('visuallyhidden');
+    //dateContainer.classList.remove('hidden');
     dateContainer.setAttribute('aria-hidden', 'false');
   });
