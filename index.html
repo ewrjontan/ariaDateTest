@@ -46,22 +46,22 @@ label {
     <legend id="options-label">Choose an option</legend>
 
     <div class="radio-wrapper">
-      <label for="option1">
-        <input type="radio" name="option" id="option1" aria-checked="true" role="radio" aria-controls="dateContainer" checked/>
+      <label>
+        <input type="radio" name="option" id="option1" aria-controls="dateContainer" checked/>
         Option 1
       </label>
     </div>
 
     <div class="radio-wrapper">
-      <label for="option2">
-        <input type="radio" name="option" id="option2" aria-checked="false" role="radio" aria-controls="dateContainer" />
+      <label>
+        <input type="radio" name="option" id="option2" aria-controls="dateContainer" />
         Option 2
       </label>
     </div>
   </fieldset>
 
-  <div id="dateContainer" class="visuallyhidden" aria-hidden="true">
-    <label for="dateInput">Select a date:</label>
+  <div id="dateContainer" class="visuallyhidden" aria-hidden="true" role="region" aria-labelledby="dateLabel">
+    <label id="dateLabel" for="dateInput">Select a date:</label>
     <input type="date" id="dateInput" />
   </div>
   <script src="index.js"></script>
