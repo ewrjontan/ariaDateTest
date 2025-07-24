@@ -25,5 +25,5 @@
     dateContainer.setAttribute('aria-hidden', 'false');
     let dateInput = document.getElementById("dateInput");
     dateInput.offsetHeight;
-    dateInput.focus();
+    //dateInput.focus();
   });
