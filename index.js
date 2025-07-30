@@ -12,7 +12,7 @@
     //dateContainer.classList.add('visuallyhidden');
     //dateContainer.classList.add('hidden');
     
-    dateContainer.css("display", "none");
+    dateContainer.style.display = "none";
     
     dateContainer.setAttribute('aria-hidden', 'true');
   });
@@ -26,7 +26,7 @@
     
     //dateContainer.classList.remove('visuallyhidden');
     //dateContainer.classList.remove('hidden');
-    dateContainer.css("display", "block");
+    dateContainer.style.display = "block";
     
     dateContainer.setAttribute('aria-hidden', 'false');
     
