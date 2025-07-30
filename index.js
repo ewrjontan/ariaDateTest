@@ -9,8 +9,11 @@
     option2.checked = false;
     option1.setAttribute('aria-checked', 'true');
     option2.setAttribute('aria-checked', 'false');
-    dateContainer.classList.add('visuallyhidden');
+    //dateContainer.classList.add('visuallyhidden');
     //dateContainer.classList.add('hidden');
+    
+    dateContainer.css("display", "none");
+    
     dateContainer.setAttribute('aria-hidden', 'true');
   });
 
@@ -20,10 +23,15 @@
     option1.checked = false;
     option2.setAttribute('aria-checked', 'true');
     option1.setAttribute('aria-checked', 'false');
-    dateContainer.classList.remove('visuallyhidden');
+    
+    //dateContainer.classList.remove('visuallyhidden');
     //dateContainer.classList.remove('hidden');
+    dateContainer.css("display", "block");
+    
     dateContainer.setAttribute('aria-hidden', 'false');
-    let dateInput = document.getElementById("dateInput");
-    dateInput.offsetHeight;
+    
+    //let dateInput = document.getElementById("dateInput");
+    //dateInput.offsetHeight;
+    
     //dateInput.focus();
   });
